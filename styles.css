@@ -1,0 +1,37 @@
+/* Colorful gradient text with shadow */
+.version-text {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    background: linear-gradient(45deg, #ff6b6b, #f9ca24, #6ab04c, #4834d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: gradientAnimation 3s infinite;
+}
+
+/* Gradient background for the body */
+body {
+    background: linear-gradient(120deg, #f0932b, #eb4d4b, #22a6b3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Animate the gradient for a colorful effect */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
